@@ -1,27 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Autonomous Intelligence</title>
+    <title>Autonomous Intelligence</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif; /* You can change this to match your website's font */
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            color: #333; /* Adjust based on your color scheme */
-            background-color: #fff; /* Adjust based on your color scheme */
+            color: #333;
+            background-color: #fff;
         }
-        .header-image {
-            width: 100%;
-            height: auto;
+        header {
+            background: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
         }
-        .content {
+        .hero {
+            background: url('https://static.wixstatic.com/media/8a0879_73ca65741f69481b86f5f76ff99f3905~mv2.jpg') no-repeat center center/cover;
+            color: #fff;
             text-align: center;
-            padding: 20px;
+            padding: 50px 20px;
+        }
+        .hero h1, .hero p {
+            margin: 10px 0;
         }
         .button {
-            background-color: #004488; /* Adjust this color to match your branding */
+            background-color: #004488;
             color: white;
             border: none;
             padding: 12px 24px;
@@ -30,28 +39,40 @@
             border-radius: 5px;
             cursor: pointer;
         }
-        footer {
-            background-color: #002244; /* Adjust this color to match your branding */
-            color: white;
+        .content {
+            padding: 20px;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        }
+        .box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .box h2 {
+            color: #007BFF;
         }
     </style>
 </head>
 <body>
-    <img src="https://static.wixstatic.com/media/8a0879_73ca65741f69481b86f5f76ff99f3905~mv2.jpg/v1/fill/w_1097,h_328,al_c,q_80,enc_auto/8a0879_73ca65741f69481b86f5f76ff99f3905~mv2.jpg" alt="Banner Image" class="header-image">
-
-    <div class="content">
-        <h1>Welcome to Autonomous Intelligence</h1>
-        <p>Discover innovative solutions that drive success. Join us in transforming the future.</p>
-        <a href="#" class="button">Learn More</a>
+    <header>
+        <img src="https://www.autonomous-intelligence.com.br/path-to-your-logo.png" alt="Logo">
+        <a href="#" class="button">Fale sobre seu projeto</a>
+    </header>
+    <div class="hero">
+        <h1>Autonomous Intelligence: Um pioneiro em IA na Europa, América do Sul e Sudeste Asiático</h1>
+        <p>Na vanguarda dos avanços tecnológicos, desenvolvemos e implementamos soluções de IA sob medida.</p>
+        <a href="#" class="button">Estudar Seu Projeto</a>
     </div>
-
-    <footer>
-        <p>Copyright &copy; 2023 Autonomous Intelligence. All rights reserved.</p>
-    </footer>
+    <div class="content">
+        <p>Somos especialistas em engenharia de dados</p>
+        <p>Somos experts em obter mais de seus dados</p>
+    </div>
+    <div class="box">
+        <h2>Ferramenta de Sincronização de Dados</h2>
+        <p>Melhoria: Integrar capacidades para sincronização de dados em tempo real para suportar casos de uso que requerem disponibilidade imediata de dados.</p>
+    </div>
+    <!-- Add more boxes for each product following the same pattern -->
 </body>
 </html>
