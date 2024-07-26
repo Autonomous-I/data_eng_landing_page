@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autonomous Intelligence</title>
+    <title>Chatbot Services - Autonomous Intelligence</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -19,6 +19,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         .hero {
             background: url('https://static.wixstatic.com/media/8a0879_73ca65741f69481b86f5f76ff99f3905~mv2.jpg') no-repeat center center/cover;
@@ -43,21 +44,52 @@
             padding: 20px;
             text-align: center;
         }
-        .box {
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .product-box {
             border: 1px solid #ccc;
             padding: 20px;
-            margin: 20px;
+            margin: 10px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            max-width: 300px;
+            text-align: left;
         }
-        .box h2 {
+        .product-box h2 {
             color: #007BFF;
+        }
+        .form-container {
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        .form-container h3 {
+            margin-bottom: 20px;
+        }
+        .form-container input, .form-container button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .form-container button {
+            background-color: #004488;
+            color: white;
+            border: none;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="https://www.autonomous-intelligence.com.br/path-to-your-logo.png" alt="Logo">
+        <img src="https://www.autonomous-intelligence.com.br/path-to-your-logo.png" alt="Logo" height="50">
         <a href="#" class="button">Fale sobre seu projeto</a>
     </header>
     <div class="hero">
@@ -69,10 +101,43 @@
         <p>Somos especialistas em engenharia de dados</p>
         <p>Somos experts em obter mais de seus dados</p>
     </div>
-    <div class="box">
-        <h2>Ferramenta de Sincronização de Dados</h2>
-        <p>Melhoria: Integrar capacidades para sincronização de dados em tempo real para suportar casos de uso que requerem disponibilidade imediata de dados.</p>
+    <div class="products">
+        <div class="product-box">
+            <h2>Ferramenta de Sincronização de Dados</h2>
+            <p>Melhoria: Integrar capacidades para sincronização de dados em tempo real para suportar casos de uso que requerem disponibilidade imediata de dados.</p>
+        </div>
+        <div class="product-box">
+            <h2>Sistema de Relatórios e Dashboards</h2>
+            <p>Melhoria: Incluir recursos de análise avançada, como análises preditivas e insights de machine learning diretamente nos dashboards.</p>
+        </div>
+        <div class="product-box">
+            <h2>Compliance como Serviço</h2>
+            <p>Expansão: Além de garantir conformidade, oferecemos avaliações de segurança de dados e atualizações regulares sobre mudanças nas regulamentações locais e internacionais.</p>
+        </div>
+        <div class="product-box">
+            <h2>Machine Learning como Serviço (MLaaS)</h2>
+            <p>Aprimoramento: Fornecemos modelos específicos para cada setor que podem ser facilmente personalizados, tornando a ferramenta mais atraente para empresas de consultoria.</p>
+        </div>
+        <div class="product-box">
+            <h2>Ferramenta de Gestão da Qualidade dos Dados</h2>
+            <p>Melhoria: Adicionar recursos para processos automatizados de limpeza e detecção de anomalias, simplificando ainda mais as tarefas de gestão de dados.</p>
+        </div>
+        <div class="product-box">
+            <h2>Novas Capacidades com Bancos de Dados Vetoriais e Pipelines de Dados</h2>
+            <p>Adicionar funcionalidades relacionadas a bancos de dados vetoriais e configurações sofisticadas de pipelines de dados pode aumentar significativamente a atratividade de suas ofertas:</p>
+            <h3>Recuperação Rápida de Dados com Bancos de Dados Vetoriais</h3>
+            <p>Conceito do Produto: Introduza um serviço que utilize bancos de dados vetoriais para melhorar a velocidade e precisão da recuperação de dados, especialmente para consultas complexas envolvendo grandes conjuntos de dados.</p>
+            <h3>Soluções Completas de Pipelines de Dados</h3>
+            <p>Conceito do Produto: Ofereça uma solução que permita a criação de pipelines de dados de múltiplas fontes para múltiplos destinos, incluindo lakes e warehouses de dados.</p>
+        </div>
     </div>
-    <!-- Add more boxes for each product following the same pattern -->
+    <div class="form-container">
+        <h3>Inscreva-se para saber mais</h3>
+        <form>
+            <input type="text" name="name" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu Email" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
 </body>
 </html>
